@@ -8,6 +8,11 @@
         List<Employee> GetAll();
 
         Employee UpdateEmployee(Employee employee);
+
+
+        void DeleteEmployee(Employee employee);
+
+
      
     }
 }

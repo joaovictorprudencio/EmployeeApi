@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Mysqlx;
 using PrimeiraAPI.Model;
 using PrimeiraAPI.ViewModel;
 
@@ -61,6 +62,25 @@ namespace PrimeiraAPI.Controllers
             var employess = _employeerRepository.GetAll();
             return Ok(employess);
 
+        }
+
+        [HttpDelete]
+        public IActionResult EmployeeDelete(Employee employee)
+        {
+            try
+            {
+
+               _employeerRepository.DeleteEmployee(employee);
+
+
+                return Ok($"Usuário {employee.name} foi deletado com sucesso.");
+            }
+            catch (Exception e )
+            {
+                throw new Exception($"Usuario {employee.name} não existe", e);
+            }
+
+            
         }
     }
 }

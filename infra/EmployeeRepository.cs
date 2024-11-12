@@ -18,6 +18,18 @@ namespace PrimeiraAPI.infra
             _context.SaveChanges();
         }
 
+        public void DeleteEmployee(Employee employee)
+        {
+            var employerPresent = _context.Employees
+                .FirstOrDefault(e => e.id == employee.id);
+
+            if(employerPresent != null)
+            {
+                _context.Employees.Remove(employerPresent);
+                _context.SaveChanges();
+            }
+        }
+
         public List<Employee> GetAll()
         {
             return _context.Employees.ToList();
