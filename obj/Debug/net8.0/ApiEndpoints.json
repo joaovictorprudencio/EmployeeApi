@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "PrimeiraAPI.Controllers.EmployeeController",
+    "Method": "EmployeeUpdate",
+    "RelativePath": "api/v1/employee",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "PrimeiraAPI.Model.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrimeiraAPI.Controllers.EmployeeController",
     "Method": "GetAll",
     "RelativePath": "api/v1/employee",
     "HttpMethod": "GET",

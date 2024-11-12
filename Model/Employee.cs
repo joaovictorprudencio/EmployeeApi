@@ -16,7 +16,7 @@ namespace PrimeiraAPI.Model
 
         public Employee( int id, string name, int age, string photo )
         {
-            this.id = id;
+          this.id = id;
           this.name = name ?? throw new ArgumentNullException(nameof(name));
           this.age = age;
           this.photo = photo;

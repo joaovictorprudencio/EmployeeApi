@@ -4091,11 +4091,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joao Victor\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\PrimeiraAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Joao Victor\\Desktop\\.Net\\PrimeiraAPI\\PrimeiraAPI\\PrimeiraAPI.csproj",
       "projectName": "PrimeiraAPI",
-      "projectPath": "C:\\Users\\Joao Victor\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\PrimeiraAPI.csproj",
+      "projectPath": "C:\\Users\\Joao Victor\\Desktop\\.Net\\PrimeiraAPI\\PrimeiraAPI\\PrimeiraAPI.csproj",
       "packagesPath": "C:\\Users\\Joao Victor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joao Victor\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\obj\\",
+      "outputPath": "C:\\Users\\Joao Victor\\Desktop\\.Net\\PrimeiraAPI\\PrimeiraAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joao Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",

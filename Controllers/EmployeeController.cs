@@ -36,6 +36,25 @@ namespace PrimeiraAPI.Controllers
           
         }
 
+        [HttpPut] 
+        public IActionResult EmployeeUpdate(Employee employee)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                _employeerRepository.UpdateEmployee(employee);
+                return Ok(employee);
+            } 
+            catch(Exception e)
+            {
+                return StatusCode(500, $"erro: {e.Message} ");
+            }
+        }
+
         [HttpGet]
         public IActionResult GetAll()
         {

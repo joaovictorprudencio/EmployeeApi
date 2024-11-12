@@ -6,6 +6,8 @@
         void Add(Employee employee);
 
         List<Employee> GetAll();
+
+        Employee UpdateEmployee(Employee employee);
      
     }
 }
